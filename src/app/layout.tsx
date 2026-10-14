@@ -4,7 +4,6 @@ import { LanguageProvider } from "@/components/LanguageContext";
 import { TopBanner } from "@/components/TopBanner";
 import { Header } from "@/components/Header";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
-import { MobileOrderBar } from "@/components/MobileOrderBar";
 import { SkipLink } from "@/components/SkipLink";
 
 export const metadata: Metadata = {
@@ -25,5 +24,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><head><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet"/></head><body><LanguageProvider><SkipLink/><TopBanner/><div className="header-shell"><Header/></div>{children}<WhatsAppFloat/><MobileOrderBar/></LanguageProvider></body></html>;
+  return <html lang="en"><head><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet"/></head><body><LanguageProvider><SkipLink/><TopBanner/><div className="header-shell"><Header/></div>{children}<WhatsAppFloat/></LanguageProvider></body></html>;
 }
